@@ -1,12 +1,12 @@
 
-function extract() {
+function extract() {    //Extração Conteúdo Json
     fetch('produtos.json')
         .then(response => response.json())
         .then(produtos => {
             const container = document.querySelector("#product");
             container.innerHTML = "";
 
-            produtos.forEach(produto => {
+            produtos.forEach(produto => { //Iteração para percorrer os array
                 const img = document.createElement("img");
                 img.src = produto.imagem;
                 img.alt = produto.nome;
@@ -23,7 +23,7 @@ function extract() {
                 const priceContainer = document.createElement("div");
                 priceContainer.classList.add("price");
 
-                if (produto.precoPromo) {
+                if (produto.precoPromo) { // Filtro Promo vs Sem Promo
                     const originalPreco = document.createElement("span");
                     originalPreco.classList.add("original-preco");
                     originalPreco.textContent = produto.preco;
@@ -104,7 +104,7 @@ function applyFilters() {
             const container = document.querySelector("#product");
             container.innerHTML = "";
 
-            filteredProdutos.forEach(produto => {
+            filteredProdutos.forEach(produto => {//Iteração para percorrer os array
                 const img = document.createElement("img");
                 img.src = produto.imagem;
                 img.alt = produto.nome;
@@ -121,7 +121,7 @@ function applyFilters() {
                 const priceContainer = document.createElement("div");
                 priceContainer.classList.add("price");
 
-                if (produto.precoPromo) {
+                if (produto.precoPromo) {// Filtro Promo vs Sem Promo
                     const originalPreco = document.createElement("span");
                     originalPreco.classList.add("original-preco");
                     originalPreco.textContent = produto.preco;
