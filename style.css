@@ -1,0 +1,158 @@
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; 
+    padding: 10px; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.filter-group {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.filter-group label {
+    display: flex;
+    margin-bottom: 5px;
+    text-align: left;
+
+}
+
+.filter-group select{
+    width: 100%; 
+}
+
+
+.filter-group input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+.container{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.product-list {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 520px;
+
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card h5 {
+    margin-top: 10px; 
+    font-size: 12px;
+    color: rgb(80, 128, 73);
+}
+
+.card h4 {
+    margin-top: 10px; 
+    font-size: 12px;
+    color: rgb(80, 128, 73);
+    background-image: url("img/img12.png"); 
+    background-size: 12px;
+    background-repeat: no-repeat; 
+    background-position: 125px; 
+}
+
+.card h3{
+    margin-top: 8xp;
+    font-size: 15px;
+
+}
+
+.card h2{
+    margin-top: 2px;
+    font-size: 14px;
+
+
+}
+
+.card h1{
+    margin-top: 8xp;
+    font-size: 12px;
+
+}
+
+.original-preco {
+    display: block;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.desconto-porcentagem {
+    display: block;
+    color: red;
+    margin: 5px 0;
+}
+
+.promo-preco {
+    display: block;
+    color: green;
+    font-size: 18px;
+}
+
+.preco.sem-desconto .oringinal-preco,
+.price.sem-desconto .desconto-porcentagem {
+    display: none;
+}

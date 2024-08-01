@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        </aside>
+        <aside class="sidebar">
+            <h1>Pesquisa</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar produtos..." oninput="applyFilters()">
+            </div>
+            <h2>Filtros</h2>
+            <form id="filterForm">
+                <div class="filter-group">
+                    <h3>Frete Gratis</h3>
+                    <label><input type="checkbox" class="filter-frete" value="true"></label>
+                    <h3>Promoção</h3>
+                    <label><input type="checkbox" class="filter-promo" value= "true"></label>
+                    <h3>Marca</h3>
+                    <label>Razer<input type="checkbox" class="filter-marca" value="Razer"></label>
+                    <label>AOC<input type="checkbox" class="filter-marca" value="AOC"></label>
+                    <label>Hiksemi<input type="checkbox" class="filter-marca" value="Hiksemi"></label>
+                    <label>Acer<input type="checkbox" class="filter-marca" value="Acer"></label>
+                    <label>Lecoo<input type="checkbox" class="filter-marca" value="Lecoo"></label>
+                    <label>ELG<input type="checkbox" class="filter-marca" value="ELG"></label>
+                    <label>DT3<input type="checkbox" class="filter-marca" value="DT3"></label>
+                    <label>Gamdias<input type="checkbox" class="filter-marca" value="Gamdias"></label>
+                    <h3>Condição:</h3>
+                    <label>Semi<input type="checkbox" class="filter-cond" value="Semi"> </label>
+                    <label>Novo<input type="checkbox" class="filter-cond" value="Novo"> </label>
+                    <h3>Categoria:</h3>
+                    <label>Componentes<input type="checkbox" class="filter-category" value="Componente Hardware"> </label>
+                    <label>Cadeiras<input type="checkbox" class="filter-category" value="Cadeira"> </label>
+                    <label>Acessórios<input type="checkbox" class="filter-category" value="Acessório"> </label>
+                    <label>Telas<input type="checkbox" class="filter-category" value="Tela"> </label>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Faixa de Preço:</label>
+                    <input type="number" id="minPreco" name="minPreco" placeholder="Mínimo" />
+                    <input type="number" id="maxPreco" name="maxPreco" placeholder="Máximo" />
+                </div>
+                <button type="button" id="applyFiltro">Aplicar Filtros</button>
+            </form>
+        </aside>
+
+
+        <main id="product" class="container"></main>
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
