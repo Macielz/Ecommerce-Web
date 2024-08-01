@@ -157,7 +157,7 @@ function applyFilters() {
                 container.appendChild(card);
             });
         })
-        .catch(error => console.error('Error fetching products:', error));
+
 }
 
 
